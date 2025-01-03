@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+        <title>Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images\icon.png">
+    <link rel="stylesheet" href="styles\style.css">
+    <link rel="stylesheet" href="styles\samples.css">
+    <link rel="stylesheet" href="styles\home.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <style>
+      .num1:hover::after, .num1:hover::before {
+        background-image: conic-gradient(from var(--angle), transparent 50%, blue);
+      }
+
+      .cardcontainer {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        justify-content: center;
+      }
+
+      @media screen and (max-width: 768px) {
+        .cardcontainer {
+          margin-top: 40px;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+    </style>
+    <script src="script.js" defer></script>
+    <script src="scripts\projects.js" defer></script>
+    <body>
+
+      <div class="transition transition-3 is-active"></div>
+
+      <h1 style="text-align: center;">Projects</h1>
+      <br>
+      <p style="text-align: center; margin: 0; font-size: 22px;">
+        Here I have attached some projects I've created since my acceptance at GLTECH. <br>
+        I have seperated them into two distinct sections. Click on the buttons to see them.
+        Thank you!
+      </p>
+      <br>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+      <div class="cardcontainer">
+        <div class="card num1">
+          <a href="projects\programming.html" style="text-decoration: none; color: inherit;">
+              <h1>Programming</h1>
+              <p>View my programming projects!</p>
+          </a>
+        </div>
+
+        <div class="card num2">
+            <a href="projects\cybersecurity.html" style="text-decoration: none; color: inherit;">
+                <h1>Cybersecurity</h1>
+                <p>View my cybersecurity projects!</p>
+            </a>
+        </div>
+      </div>
+
+    </body>
+
+    <!-- 
+    what are the chances someone actually reads these comments?
+         it's fine there's no damn way you don't know what this is by now.
+         it'd be kinda embarrasing if you didn't, sooo.
+    -->
+    <div class="aside" id="aside">
+      <aside>
+        <p class="navigation">
+          <a href="portfolio.html"><button class="nav">Home</button></a>
+        </br>
+          <a href="resume.html"><button class="nav">Resume</button></a>
+        </br>
+          <a href="certifications.html"><button class="nav">Certifications</button></a>
+        </br>
+          <a href="projects.html"><button class="nav">Work Samples</button></a>
+        </p>
+      </aside>
+    </div>
+
+    <footer class="footer">
+      <a target="_blank" href="https://www.linkedin.com/in/kitryc-virak-9b5a8229a/"><img class="in" src="images\linkedin.png"></a>
+      <a target="_blank" href="https://github.com/kitryc"><img class="in" src="images\github.png"></a>
+      <p style="text-align: center; font-size: 22px;"><a href="mailto:kitrycv@gmail.com" class="mail" target="_blank">kitrycv@gmail.com</a></p>
+      <br>
+    </footer>
+
+    
+</html>

@@ -1,0 +1,9 @@
+.resume {
+  outline: 2px solid #f2f2f2;
+  outline-offset: 8px;
+  display: block;
+  margin: auto;
+  padding: auto;
+  width: 30.5%;
+  aspect-ratio: 1700 / 2200;
+}

@@ -1,0 +1,115 @@
+.column-container {
+  display: flex;
+  flex-grow: 1;
+  margin-left: 220px;
+}
+
+.column-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  opacity: 0;
+  animation: slideInLeft 1s forwards;
+}
+
+.column-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: auto;
+  margin-right: 14%;
+}
+
+.e1, .e4, .e7 {
+  margin: 0;
+  padding: 0;
+}
+
+/* animating the left column */
+
+@keyframes slideInLeft {
+  from {
+      transform: translateX(-300px);
+      opacity: 0;
+  }
+
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+/* sectioning --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.slideIn {
+  animation: slideInLeft 1s ease 0s 1 normal forwards;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 500px);
+  grid-template-rows: 50px, 250px, 250px;
+  margin-top: 40px;
+  gap: 5px;
+  row-gap: 10px;
+  padding: 4px;
+  margin: 40px auto 2px;
+  width: fit-content;
+  transform: translateX(2%);
+}
+
+.element img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.element {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.element.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes slideDown {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* sectioning --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 1724px) {
+  .column-container {
+      margin-left: 0;
+  }
+
+  .column-left {
+      margin-left: 0;
+  }
+
+  .column-right {
+      margin-right: 0;
+  }
+
+  .grid {
+      grid-template-columns: repeat(1, 500px);
+  }
+
+    .e1 { order: 1; }
+    .e4 { order: 2; }
+    .e7 { order: 3; }
+
+    .e2 { order: 4; }
+    .e5 { order: 5; }
+    .e8 { order: 6; }
+
+    .e3 { order: 7; }
+    .e6 { order: 8; }
+    .e9 { order: 9; }
+}

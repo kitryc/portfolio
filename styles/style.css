@@ -1,0 +1,249 @@
+body {
+    background-color: #130f1a;
+    height: 100vh;
+    margin-left: 0px;
+}
+
+h1 {
+    color: #f2f2f2;
+    font-family: 'Raleway';
+    font-size: 90px;
+    text-decoration: bold;
+    /* margin: 17px 10px 10px 225px; */
+    margin: 0;
+}
+
+.in {
+    float: right;
+    height: 50px;
+    padding: 12px;
+}
+
+p {
+    color: white;
+    font-family: 'Raleway';
+}
+
+.mail {
+    color: #5f86cf;
+    text-decoration: none;
+}
+
+.mail:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    margin-top: auto;
+    position: fixed;
+    min-height: 10px;
+    max-height: 70px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: #0d0a12;
+    opacity: 0;
+    animation: slideInTop 1s forwards;
+    animation-delay: 0.5s;
+}
+
+
+@keyframes slideInTop {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+  
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+  }
+
+/* navigation styling */
+
+#aside{
+    height: 100%;
+    width: 10%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #0a070e;
+    padding-top: 20px;
+    padding-left: 5px;
+    text-align: center;
+}
+
+.nav{
+    font-family: 'Raleway';
+    color: #f2f2f2;
+    border: 1px solid;
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 10px;
+    width: 90%;
+    background-color: #0d0a12;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    animation-delay: 0.5s;
+}
+
+.nav:hover {
+    background-color: #191421;
+}
+
+.gray-out {
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.aside {
+    opacity: 0;
+    animation: slideInLeft 1s forwards;
+}
+
+/* Mobile Compatibility */
+
+@media screen and (max-width: 1024px) {
+    #aside {
+        height: 50px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        padding: 10px;
+    }
+
+    #aside aside {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #aside .navigation {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    #aside .nav {
+        flex: 1;
+    }
+
+    .nav {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+        padding: 5px 15px;
+        box-sizing: border-box;
+        margin-top: 0;
+    }
+  }
+
+@media screen and (max-width: 1024px) {
+    h1 {
+    font-size: 60px;
+    margin-top: 80px;
+    }
+    
+}
+
+
+@keyframes slideInLeft {
+from {
+    transform: translateX(-300px);
+    opacity: 0;
+}
+
+to {
+    transform: translateX(0);
+    opacity: 1;
+}
+}
+
+/* page transitions. hell on earth */
+.transition-1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 101;
+    background-color: #0d0717;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s ease-out;
+}
+
+.transition-1.is-active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.transition-2 {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    z-index: 101;
+    background-color: #0d0717;
+    transition: 0.5s ease-out;
+}
+
+.transition-2.is-active {
+    left: 0;
+}
+
+.transition-3 {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+    background-color: #0d0717;
+    transition: left 0.5s ease-out;
+}
+
+.transition-3.is-active {
+    left: 0;
+}
+
+.transition-4 {
+    position: fixed;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+    background-color: #0d0717;
+    transition: top 0.5s ease-out;
+}
+  
+.transition-4.is-active {
+    top: 0;
+}
+  
+.transition-5 {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+    background-color: #0d0717;
+    transition: top 0.5s ease-out;
+}
+  
+.transition-5.is-active {
+    top: 0;
+}
+  
