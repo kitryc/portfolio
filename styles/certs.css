@@ -51,4 +51,48 @@ p {
         align-items: center;
         margin-left: 20px;
     }
+
+    .header-container {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 30000px){
+    #aside {
+        height: 50px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        padding: 10px;
+    }
+
+    #aside aside {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    #aside .navigation {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    #aside .nav {
+        flex: 1;
+    }
+
+    .nav {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+        padding: 5px 15px;
+        box-sizing: border-box;
+        margin-top: 0;
+    }
 }
