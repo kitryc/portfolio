@@ -56,6 +56,13 @@ window.onload = () => {
     }
 };
 
+window.addEventListener('popstate', () => {
+    const transition_el = document.querySelector('.transition');
+    if (transition_el) {
+        transition_el.classList.add('is-active');
+    }
+});
+
 
 window.onbeforeunload = () => {
     const transition_el = document.querySelector('.transition');
