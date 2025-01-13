@@ -26,8 +26,10 @@ buttons.forEach(button => {
     });
 });
 
+var i = 0;
 document.addEventListener("DOMContentLoaded", (event) => {
-    console.log("Transitioning");
+    console.log("Transitioning: " + i);
+    i++;
     const transition_el = document.querySelector('.transition');
     const anchors = document.querySelectorAll('a');
 
