@@ -26,10 +26,7 @@ buttons.forEach(button => {
     });
 });
 
-var i = 0;
-document.addEventListener("DOMContentLoaded", (event) => {
-    console.log("Transitioning: " + i);
-    i++;
+document.addEventListener("DOMContentLoaded", function() {
     const transition_el = document.querySelector('.transition');
     const anchors = document.querySelectorAll('a');
 
@@ -47,7 +44,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         anchor.addEventListener('click', e => {
             const target = anchor.href;
 
-            e.preventDefault();
+            //e.preventDefault();
 
             
             transition_el.classList.add('is-active');
