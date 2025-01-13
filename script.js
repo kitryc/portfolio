@@ -27,6 +27,7 @@ buttons.forEach(button => {
 });
 
 document.addEventListener("DOMContentLoaded", (event) => {
+    console.log("Transitioning");
     const transition_el = document.querySelector('.transition');
     const anchors = document.querySelectorAll('a');
 
