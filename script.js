@@ -35,13 +35,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
     window.addEventListener('pageshow', (event) => {
         if (event.persisted) {
-            removeActiveClass();
+            setTimeout(removeActiveClass, 250);
         }
     });
 
     document.addEventListener("visibilitychange", function() {
         if (document.visibilityState === 'visible') {
-            removeActiveClass();
+            setTimeout(removeActiveClass, 250);
         }
     });
 });
