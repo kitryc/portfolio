@@ -26,11 +26,24 @@ function navigate(target) {
 
 document.addEventListener("DOMContentLoaded", function() {
     const transition_el = document.querySelector('.transition');
-    const anchors = document.querySelectorAll('a');
 
-    setTimeout(() => {
+    const removeActiveClass = () => {
         transition_el.classList.remove('is-active');
-    }, 500);
+    };
+
+    setTimeout(removeActiveClass, 500);
+
+    window.addEventListener('pageshow', (event) => {
+        if (event.persisted) {
+            removeActiveClass();
+        }
+    });
+
+    document.addEventListener("visibilitychange", function() {
+        if (document.visibilityState === 'visible') {
+            removeActiveClass();
+        }
+    });
 });
 
 window.onbeforeunload = () => {
