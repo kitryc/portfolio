@@ -27,10 +27,24 @@ p {
 .mail {
     color: #5f86cf;
     text-decoration: none;
+    position: relative;
+    display: inline-block;
 }
 
-.mail:hover {
-    text-decoration: underline;
+.mail::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #5f86cf;
+    transition: width 0.4s ease, left 0.4s ease;
+}
+
+.mail:hover::after {
+    width: 100%;
+    left: 0;
 }
 
 .footer {
