@@ -21,9 +21,18 @@
 }
 
 .element {
+    position: relative;
     opacity: 0;
     transform: translateY(-20px);
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.element a img {
+    transition: border-radius 0.25s ease-out;
+}
+
+.element:hover a img {
+    border-radius: 10px;
 }
 
 .element.visible {
@@ -33,6 +42,35 @@
 
 .element:hover {
     cursor: pointer;
+}
+
+/* Hovering over images styling for certifications */
+
+.element::after {
+    display: flex;
+    position: relative;
+    content: "View";
+    font-size: 3em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-weight: bold;
+    pointer-events: none;
+
+    transition: background-color 0.25s ease-out, opacity 0.25s ease-out;
+}
+
+.element:hover::after {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 @keyframes slideDown {
