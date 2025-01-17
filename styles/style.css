@@ -25,6 +25,7 @@ p {
 }
 
 .mail {
+    margin: auto;
     color: #5f86cf;
     text-decoration: none;
     position: relative;
@@ -32,6 +33,7 @@ p {
 }
 
 .mail::after {
+    opacity: 0.75;
     content: '';
     position: absolute;
     bottom: 0;
@@ -59,6 +61,14 @@ p {
     opacity: 0;
     animation: slideInTop 1s forwards;
     animation-delay: 0.5s;
+}
+
+.footer > p {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    font-size: 22px;
+    display: flex;
 }
 
 

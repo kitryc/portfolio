@@ -80,13 +80,21 @@ p {
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 80%;
         height: 100%;
+        margin: auto;
     }
 
     #aside .navigation {
         display: flex;
         flex-direction: row;
         gap: 10px;
+        margin: auto;
+    }
+
+    #aside .navigation a button {
+        display: flex;
+        left: 0;
     }
 
     #aside .nav {
