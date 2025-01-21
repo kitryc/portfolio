@@ -1,9 +1,53 @@
 .resume {
-  outline: 2px solid #f2f2f2;
+  outline: 5px solid #f2f2f2;
   outline-offset: 8px;
   display: block;
   margin: auto;
   padding: auto;
   width: 30.5%;
   aspect-ratio: 1700 / 2200;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.download {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 15px 30px; 
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.download:hover {
+  background-color: white;
+  color: black;
+}
+
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 60px;
+    margin-top: 80px;
+  }
+
+  .resume {
+    outline: 2px solid #f2f2f2;
+    outline-offset: 8px;
+    display: block;
+    margin: auto;
+    width: 80.5%;
+    max-width: 100%;
+    height: auto;
+  }
+
 }
