@@ -10,7 +10,6 @@ h2 {
 ul, li {
     color: #F2F2F2;
     margin-bottom: 3px;
-    /* list-style-type: circle; */
 }
 
 .grid {
@@ -19,12 +18,19 @@ ul, li {
     grid-gap: 20px;
     margin: 50px auto;
     justify-content: center;
+    margin: 0 auto;
+    margin-left: 10%;
+    padding-top: 5px;
 }
 
 .element {
     background-color: #0D0A12;
     border-radius: 15px;
     padding-bottom: 20px;
+}
+
+.element {
+    margin-left: 10%;
 }
 
 @media screen and (max-width: 1824px) {
@@ -42,11 +48,13 @@ ul, li {
 
     .grid {
         grid-template-columns: repeat(2, 320px);
+        margin-left: 0;
     }
 }
 
 @media screen and (max-width: 768px) {
     .grid {
         grid-template-columns: repeat(1, 360px);
+        margin-left: 0;
     }
 }
