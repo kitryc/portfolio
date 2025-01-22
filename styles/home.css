@@ -70,6 +70,10 @@
     background-image: conic-gradient(from var(--angle), transparent 50%, blue);
 }
 
+.num4:hover::after, .num4:hover::before {
+    background-image: conic-gradient(from var(--angle), transparent 50%, white);
+}
+
 .card::before {
     filter: blur(1.5rem);
 }
