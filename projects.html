@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="styles\home.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
     <style>
-      .num1:hover::after, .num1:hover::before {
-        background-image: conic-gradient(from var(--angle), transparent 50%, blue);
-      }
+      .card.num1::after, .card.num1::before {
+    background-image: conic-gradient(from var(--angle), transparent 50%, rgba(0, 0, 255, var(--opacity)));
+}
 
       .cardcontainer {
         display: flex;
@@ -38,7 +38,7 @@
       <div class="transition transition-3 is-active"></div>
 
       <div id="page-title-container" style="margin-left: 0;">
-        <h1 style="text-align: center;" id="page-title">Certifications</h1>
+        <h1 style="text-align: center;" id="page-title">Projects</h1>
       </div>
       <br>
       <p style="text-align: center; margin: 0; font-size: 22px; margin-left: 0;">
@@ -84,7 +84,7 @@
         </br>
           <a onclick="navigate('awards.html')"><button class="nav">Awards</button></a>
         </br>
-          <a onclick="navigate('projects.html')"><button class="nav">Work Samples</button></a>
+          <a onclick="navigate('projects.html')"><button class="nav">Projects</button></a>
         </p>
       </aside>
     </div>
