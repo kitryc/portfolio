@@ -36,6 +36,11 @@ p {
     padding: 15px;
   }
 
+.aside {
+    opacity: 0;
+    animation: slideInDown 1s forwards;
+}
+
 @media screen and (max-width: 1224px) {
     .cont {
         display: flex;
@@ -90,6 +95,8 @@ p {
         flex-direction: row;
         gap: 10px;
         margin: auto;
+        width: 0px;
+        justify-content: center;
     }
 
     #aside .navigation a button {
