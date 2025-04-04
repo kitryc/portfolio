@@ -55,6 +55,7 @@
     padding: 7px;
     border-radius: 11px;
     animation: 3s spin linear infinite, 0.25s spinFadeOut linear 1 forwards;
+    --opacity: 0;
 }
 
 .card.num1::after, .card.num1::before {
