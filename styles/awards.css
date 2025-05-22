@@ -1,3 +1,13 @@
+:root {
+    --text-color: #F2F2F2;
+    --element-color: #0D0A12;
+}
+
+.lightmode {
+    --text-color: #3c4043;
+    --element-color: #f6f9ff;
+}
+
 @property --angle {
     syntax: "<angle>";
     initial-value: 0deg;
@@ -9,12 +19,12 @@ h1 {
 }
 
 h2 {
-    color: #F2F2F2;
+    color: var(--text-color);
     text-align: center;
 }
 
 ul, li {
-    color: #F2F2F2;
+    color: var(--text-color);
     margin-bottom: 3px;
 }
 
@@ -30,7 +40,7 @@ ul, li {
 }
 
 .element {
-    background-color: #0D0A12;
+    background-color: var(--element-color);
     border-radius: 15px;
     padding-bottom: 20px;
     margin-left: 10%;
