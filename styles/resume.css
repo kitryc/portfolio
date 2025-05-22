@@ -1,5 +1,17 @@
+:root {
+  --border-color: #f2f2f2;
+  --download-color: white;
+  --hover-color: #383838;
+}
+
+.lightmode {
+  --border-color: #383838;
+  --download-color: #2b2b2b;
+  --hover-color: #f2f2f2;
+}
+
 .resume {
-  outline: 5px solid #f2f2f2;
+  outline: 5px solid var(--border-color);
   outline-offset: 8px;
   display: block;
   margin: auto;
@@ -18,19 +30,19 @@
 }
 
 .download {
-  color: white;
+  color: var(--download-color);
   font-size: 20px;
   text-decoration: none;
   padding: 15px 30px; 
-  border: 2px solid white;
+  border: 2px solid var(--download-color);
   border-radius: 5px;
   background-color: transparent;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .download:hover {
-  background-color: white;
-  color: black;
+  background-color: var(--download-color);
+  color: var(--hover-color);
 }
 
 
@@ -41,7 +53,7 @@
   }
 
   .resume {
-    outline: 2px solid #f2f2f2;
+    outline: 2px solid var(--border-color);
     outline-offset: 8px;
     display: block;
     margin: auto;

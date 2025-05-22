@@ -1,14 +1,26 @@
+:root {
+    --home-color: #c7c7c7;
+    --card-color: #07060a;
+    --cardtxt-color: #f2f2f2;
+}
+
+.lightmode {
+    --home-color: #07060a;
+    --card-color: #f6f9ff;
+    --cardtxt-color: #3c4043;
+}
+
 .hometxt, .about {
     font-family: 'Raleway';
     font-size: 16px;
-    color: #c7c7c7;
+    color: var(--home-color);
     margin: 0px 10px 10px 230px;
 }
 
 .card {
     position: relative;
-    background-color: #07060a;
-    color: white;
+    background-color: var(--card-color);
+    color: var(--cardtxt-color);
     width: 300px;
     padding: 20px;
     margin-bottom: 50px;
@@ -25,7 +37,7 @@
 .card p {
     font-size: 16px;
     margin: 0;
-    color: #c7c7c7;
+    color: var(--cardtxt-color);
 }
 
 .card:hover {
